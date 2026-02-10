@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mood Meter ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe6ee, #ffd1dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(255, 0, 80, 0.2);
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: #ff2f68;
+    font-size: 28px;
+  }
+
+  input[type="range"] {
+    width: 320px;
+    margin: 20px 0;
+    accent-color: #ff2f68;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255,0,80,0.9);
+    background: linear-gradient(90deg, #ff2f68, #ff7aa2);
+    padding: 12px 20px;
+    border-radius: 14px;
+    display: inline-block;
+  }
+
+  .line {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #7a0026;
+    font-style: italic;
+    max-width: 420px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Hajra’s current cuteness level 😌</h1>
+
+  <input type="range" min="0" max="100" value="50" id="slider">
+
+  <div class="result">MAXIMUM 💯</div>
+
+  <div class="line">
+    apse zyada cute aur pyaari insaan  
+    koi nahi hai meri life mein 💖
+  </div>
+</div>
+
+<script>
+  const slider = document.getElementById("slider");
+
+  slider.addEventListener("input", () => {
+    slider.value = 100; // always MAXIMUM 😄
+  });
+</script>
+
+</body>
+</html>
